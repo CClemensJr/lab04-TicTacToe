@@ -17,7 +17,11 @@ namespace Lab04_TicTacToe.Classes
 		/// </summary>
 		public bool IsTurn { get; set; }
 
-
+        /// <summary>
+        /// Gets the move from the player and clears it out with each method call.
+        /// </summary>
+        /// <param name="board"></param>
+        /// <returns>desired coordinate</returns>
 		public Position GetPosition(Board board)
 		{
 			Position desiredCoordinate = null;
@@ -31,7 +35,11 @@ namespace Lab04_TicTacToe.Classes
 
 		}
 
-
+        /// <summary>
+        /// The PositionForNumber returns the appropriate coordinates on the board based on the player input in GetPosition method
+        /// </summary>
+        /// <param name="position"></param>
+        /// <returns>Returns gameboard coordinates</returns>
 		public static Position PositionForNumber(int position)
 		{
 			switch (position)
@@ -50,7 +58,10 @@ namespace Lab04_TicTacToe.Classes
 			}
 		}
 
-	
+	    /// <summary>
+        /// This method allows a player to take a turn by setting the IsTurn propertyto true, notifying the player on the screen, asking for position input, setting the players marker on the board if the position is available or letting them know if the position is unavailable
+        /// </summary>
+        /// <param name="board"></param>
 		public void TakeTurn(Board board)
 		{
 			IsTurn = true;
