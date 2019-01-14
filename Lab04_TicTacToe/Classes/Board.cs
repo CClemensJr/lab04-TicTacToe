@@ -17,7 +17,7 @@ namespace Lab04_TicTacToe.Classes
 		};
 
         /// <summary>
-        /// The DisplayBoard method loops through a multidimensional array and presents the values of the array as formatted spaces on a game board
+        /// TODO: The DisplayBoard method loops through a multidimensional array and presents the values of the array as formatted spaces on a game board
         /// </summary>
 		public void DisplayBoard()
 		{
