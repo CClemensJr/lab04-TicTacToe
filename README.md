@@ -10,24 +10,20 @@
 ```
 	starting game board
 ```
-![alt text](https://github.com/CClemensJr/Lab02-UNIT-TESTING/blob/master/assets/main_menu.PNG)
+![alt text](https://github.com/CClemensJr/Lab04-TicTacTor/blob/master/assets/startingBoard.PNG)
 
 ```
 	winning game board (x wins)
 ```
-![alt text](https://github.com/CClemensJr/Lab02-UNIT-TESTING/blob/master/assets/check_balance.PNG)
+![alt text](https://github.com/CClemensJr/Lab04-TicTacToe/blob/master/assets/winningBoard.PNG)
 
 
 ## usage
 ```
 	1. Run the application.
-	2. At the main menu, enter 1 to check your account balance.
-	3. Press enter to return to the main menu selection.
-	4. Enter 2 to withdraw funds from your account.
-	5. Press enter to return to the main menu selection.
-	6. Enter 3 to deposit funds into your account.
-	7. Press enter to return to the main menu selection.
-	8. Enter 4 to Exit the ATM.
+	2. Player 1 selects their position on the game board.
+	3. Player 2 selects their position on the game board.
+	4. Repeat the steps 2 and 3 until a winner is declared!
 ```
 
 ## installation
