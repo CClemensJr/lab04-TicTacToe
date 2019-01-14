@@ -32,7 +32,7 @@ namespace Lab04_TicTacToe.Classes
 		}
 
 		/// <summary>
-		/// Activate the Play of the game
+		/// Control the pace of the game. The method calls the appropriate methods to display the board, take a turn, check for a winner, and switch turns all while looping until a winner is found.
 		/// </summary>
 		/// <returns>Winner</returns>
 		public Player Play()
@@ -55,16 +55,17 @@ namespace Lab04_TicTacToe.Classes
 
             Use any and all pre-existing methods in this program to help construct the method logic. */
 
-            //while (CheckForWinner(Board) == false)
-            //{
+            while (CheckForWinner(Board) == false)
+            {
                 Console.WriteLine("The current board:\n");
                 Board.DisplayBoard();
 
                 NextPlayer().TakeTurn(Board);
-                CheckForWinner(Board);
-                Board.DisplayBoard();
 
-            //}
+                CheckForWinner(Board);
+
+                SwitchPlayer();
+            }
             return PlayerOne;
 		}
 
