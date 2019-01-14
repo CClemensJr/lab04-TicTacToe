@@ -62,12 +62,18 @@ namespace Lab04_TicTacToe.Classes
 
                 NextPlayer().TakeTurn(Board);
 
-                
+                if (CheckForWinner(Board))
+                {
+                    Board.DisplayBoard();
+                    Winner = NextPlayer();
+
+                    return Winner;
+                }
 
                 SwitchPlayer();
             }
 
-            return PlayerOne;
+            return Winner;
 		}
 
 
