@@ -22,6 +22,7 @@ namespace Lab04_TicTacToe.Classes
 			PlayerOne = p1;
             PlayerOne.Name = "Captain Planet";
             PlayerOne.Marker = "X";
+            PlayerOne.IsTurn = true;
 
 			PlayerTwo = p2;
             PlayerTwo.Name = "Captain America";
