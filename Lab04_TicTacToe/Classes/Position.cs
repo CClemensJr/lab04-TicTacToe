@@ -10,7 +10,7 @@ namespace Lab04_TicTacToe.Classes
 		public int Column { get; set; }
 
 		/// <summary>
-		/// Position on the gameboard being initialized 
+		/// This is the constructor for Position objects, setting the row and column when an object is instantiated.
 		/// </summary>
 		/// <param name="row">row number</param>
 		/// <param name="column">column number</param>

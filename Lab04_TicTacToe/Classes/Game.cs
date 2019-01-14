@@ -20,7 +20,13 @@ namespace Lab04_TicTacToe.Classes
 		public Game(Player p1, Player p2)
 		{
 			PlayerOne = p1;
+            PlayerOne.Name = "Captain Planet";
+            PlayerOne.Marker = "X";
+
 			PlayerTwo = p2;
+            PlayerTwo.Name = "Captain America";
+            PlayerTwo.Marker = "O";
+
 			Board = new Board();
 		}
 
@@ -31,7 +37,7 @@ namespace Lab04_TicTacToe.Classes
 		public Player Play()
 		{
 
-			//TODO: Complete this method and utilize the rest of the class structure to play the game.
+            //TODO: Complete this method and utilize the rest of the class structure to play the game.
 
             /*
              * Complete this method by constructing the logic for the actual playing of Tic Tac Toe. 
@@ -47,7 +53,18 @@ namespace Lab04_TicTacToe.Classes
                 and make sure that the game continues while there are unmarked spots on the board. 
 
             Use any and all pre-existing methods in this program to help construct the method logic. */
-           
+
+            //while (CheckForWinner(Board) == false)
+            //{
+                Console.WriteLine("The current board:\n");
+                Board.DisplayBoard();
+
+                NextPlayer().TakeTurn(Board);
+                CheckForWinner(Board);
+                Board.DisplayBoard();
+
+            //}
+            return PlayerOne;
 		}
 
 
