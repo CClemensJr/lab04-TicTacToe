@@ -9,9 +9,32 @@ namespace TicTacToeTests
         [Fact]
         public void ShouldReturnWinner()
         {
-           Board board = new Board();
+            Player test1 = new Player();
+            Player test2 = new Player();
 
-            Assert.Equal(PWinner, );
+            Game testGame = new Game(test1, test2);
+            Board board = new Board();
+
+
+            Assert.True(testGame.CheckForWinner(board));
+        }
+
+        [Fact]
+        public void ShouldSwitchPlayers()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldMatch()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldReturnPlayer()
+        {
+
         }
     }
 }
