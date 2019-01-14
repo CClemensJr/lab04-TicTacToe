@@ -62,16 +62,17 @@ namespace Lab04_TicTacToe.Classes
 
                 NextPlayer().TakeTurn(Board);
 
-                CheckForWinner(Board);
+                
 
                 SwitchPlayer();
             }
+
             return PlayerOne;
 		}
 
 
 		/// <summary>
-		/// Check if winner exists
+		/// Check if winner exists by creating an array pf winning conditions. Then iterate over the winning conditions to see of the current player's position matches any of them.
 		/// </summary>
 		/// <param name="board">current state of the board</param>
 		/// <returns>if winner exists</returns>
@@ -104,7 +105,15 @@ namespace Lab04_TicTacToe.Classes
 
                 // TODO:  Determine a winner has been reached. 
                 // return true if a winner has been reached. 
-       
+                //if (p1.ToString() == a && p2.ToString() == b && p3.ToString() == c) return true;
+                if (a == "X" && b == "X" && c == "X")
+                {
+                    return true;
+                }
+                else if (a == "O" && b == "O" && c == "O")
+                {
+                    return true;
+                }
             }
 
 			return false;
