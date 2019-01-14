@@ -38,6 +38,7 @@ namespace Lab04_TicTacToe.Classes
              * 
              */
             //1. A turn consists of a player picking a position on the board with their designated marker. 
+
             //2. Display the board after every turn to show the most up to date state of the game
             //3. Once a Winner is determined, display the board one final time and return a winner
 
@@ -82,11 +83,10 @@ namespace Lab04_TicTacToe.Classes
 				string b = Board.GameBoard[p2.Row, p2.Column];
 				string c = Board.GameBoard[p3.Row, p3.Column];
 
-				// TODO:  Determine a winner has been reached. 
-				// return true if a winner has been reached. 
-
-			
-			}
+                // TODO:  Determine a winner has been reached. 
+                // return true if a winner has been reached. 
+       
+            }
 
 			return false;
 		}
