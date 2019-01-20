@@ -55,8 +55,11 @@ namespace Lab04_TicTacToe.Classes
 
             Use any and all pre-existing methods in this program to help construct the method logic. */
 
-            while (CheckForWinner(Board) == false)
+            int turns = 0;
+
+            while (CheckForWinner(Board) == false || turns < 10 )
             {
+                turns++;
                 Console.WriteLine("The current board:\n");
                 Board.DisplayBoard();
 
